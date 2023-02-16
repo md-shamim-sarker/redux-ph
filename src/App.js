@@ -1,5 +1,6 @@
 import React, {createContext, useState} from 'react';
 import Counter from './pages/Counter';
+import Home from './pages/Home';
 // import CounterTest from './pages/CounterTest';
 // import Parent from './pages/Parent';
 
@@ -11,9 +12,6 @@ const App = () => {
   return (
     <COUNTER_CONTEXT.Provider value={value}>
       <div>
-        {/* <Parent></Parent> */}
-        <Counter></Counter>
-        {/* <CounterTest></CounterTest> */}
       </div>
     </COUNTER_CONTEXT.Provider>
   );
