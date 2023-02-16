@@ -1,5 +1,6 @@
 import React, {createContext, useState} from 'react';
 import Counter from './pages/Counter';
+// import CounterTest from './pages/CounterTest';
 // import Parent from './pages/Parent';
 
 export const COUNTER_CONTEXT = createContext();
@@ -12,6 +13,7 @@ const App = () => {
       <div>
         {/* <Parent></Parent> */}
         <Counter></Counter>
+        {/* <CounterTest></CounterTest> */}
       </div>
     </COUNTER_CONTEXT.Provider>
   );
