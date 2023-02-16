@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {COUNTER_CONTEXT} from '../App';
 
-const Child = ({count, setCount}) => {
+const Child = () => {
+    const {count, setCount} = useContext(COUNTER_CONTEXT);
     return (
         <div className='flex justify-center items-center'>
             <div className='w-72 border border-blue-200 p-5 rounded-lg shadow-2xl'>

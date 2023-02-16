@@ -1,8 +1,9 @@
-import React, {useState} from 'react';
+import React, {useContext} from 'react';
+import {COUNTER_CONTEXT} from '../App';
 import Child from './Child';
 
 const Parent = () => {
-    const [count, setCount] = useState(0);
+    const {count} = useContext(COUNTER_CONTEXT);
     return (
         <div>
             <div className='h-52 flex justify-center items-center'>
@@ -11,10 +12,7 @@ const Parent = () => {
                     <h2 className='text-center text-5xl font-bold mb-5'>{count}</h2>
                 </div>
             </div>
-            <Child
-                count={count}
-                setCount={setCount}
-            ></Child>
+            <Child></Child>
         </div>
     );
 };
