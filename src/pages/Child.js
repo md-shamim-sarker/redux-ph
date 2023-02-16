@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const Child = () => {
-    const [count, setCount] = useState(0);
+const Child = ({count, setCount}) => {
     return (
-        <div className='h-screen flex justify-center items-center'>
+        <div className='flex justify-center items-center'>
             <div className='w-72 border border-blue-200 p-5 rounded-lg shadow-2xl'>
                 <h2 className='text-center text-5xl font-bold mb-5'>{count}</h2>
                 <div className='flex justify-around'>
