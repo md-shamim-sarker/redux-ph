@@ -1,9 +1,10 @@
 import React from 'react';
+import Child from './pages/Child';
 
 const App = () => {
   return (
     <div>
-      This is App
+      <Child></Child>
     </div>
   );
 };
